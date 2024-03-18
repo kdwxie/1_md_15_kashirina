@@ -1,0 +1,5 @@
+d = input()
+def data(d):
+    a = int(d[:2]) * int(d[4:5]) == int(d[-2])
+    return a
+print(data(d))
