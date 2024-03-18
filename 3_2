@@ -1,0 +1,8 @@
+def sto(d):
+    if d != 0:
+        a = 100/d
+    else:
+        a = "error"
+    print(a)
+
+sto(hg)
