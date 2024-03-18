@@ -1,0 +1,8 @@
+def delenie(d):
+    if d%3 == 0:
+        a = "yes"
+    else:
+        a = "no"
+    print(a)
+
+delenie(7)
