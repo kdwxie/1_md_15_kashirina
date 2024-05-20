@@ -1,0 +1,24 @@
+class Restaurant():
+    def __init__(self,restaurant_name, cuisine_type):
+        self.restaurant_name = restaurant_name
+        self.cuisine_type = cuisine_type
+
+
+    def describe_restaurant(self):
+        print(self.restaurant_name + " " +  self.cuisine_type)
+    def open_restaurant(self):
+        print(self.restaurant_name + " " + "открыт!")
+
+newRestaurant = Restaurant('Ресторан', 'Итальянской кухни')
+
+newRestaurant.describe_restaurant()
+newRestaurant.open_restaurant()
+
+def dva():
+    oneRest = Restaurant("Ресторан А", "Французской кухни")
+    twoRest = Restaurant("Ресторан Б","Скандинавской кухни")
+    threeRest = Restaurant("Ресторан В", "Китайской кухни")
+    oneRest.describe_restaurant()
+    twoRest.describe_restaurant()
+    threeRest.describe_restaurant()
+#dva()
