@@ -1,0 +1,25 @@
+def one():
+    dictionary = {"Россия": "Москва", "Китай": "Пекин", "США": "Вашингтон"}
+    print(dictionary.keys())
+    print(dictionary.get("Россия"))
+    print(sorted(dictionary.keys()))
+#one()
+
+def two():
+    summa = 0
+    spisok = {
+        1: "АВЕИНОРСТ",
+        2: "ДКЛМПУ",
+        3: "БГЁЬЯ",
+        4: "ЙЫ",
+        5: "ЖХЧЦЧ",
+        8: "ШЭЮ",
+        10: "ФЩЪ",
+    }
+    word = input("Введите слово (капсом)")
+    for a in word:
+        for key, value in spisok.items():
+            if a in key:
+                summa = summa + key
+    print(summa)
+#two()
