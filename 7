@@ -1,0 +1,24 @@
+from PIL import Image, ImageDraw, ImageFont
+def odin():
+    image = Image.open("otkr.jpg")
+    cropped_img = image.crop((50, 50, 350, 400))
+    cropped_img.show()
+    cropped_img.save("cr_img.jpg")
+
+def dva():
+    event = {"Новый год": "ng.jpg", "8 марта": "mart.jpg", "День рождения": "bd.jpg"}
+    key = input("Введите название праздника - ")
+    b = event.get(key)
+    img = Image.open(b)
+    img.show()
+
+def tri():
+    a = input("Кого хотите поздравить?")
+    image = Image.open("cr_img.jpg")
+    font = ImageFont.truetype("arial.ttf", 24)
+    drawer = ImageDraw.Draw(image)
+    drawer.text((50,100), f"{a}, Поздравляю!", font = font, fill='blue')
+    image.show()
+    image.save("fff.png")
+
+tri()
