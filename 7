@@ -1,0 +1,27 @@
+from PIL import Image
+def pervoe():
+    image = Image.open('cat.jpg')
+    image.show()
+    a = image.size
+    b = image.format
+    print(a)
+    print(b)
+    print(c)
+
+def vtoroe():
+    img = Image.open('cat.jpg')
+    res_img = img.reduce(3)
+    a = img.transpose(Image.FLIP_LEFT_RIGHT)
+    b = img.transpose(Image.FLIP_TOP_BOTTOM)
+    img.show()
+    a.show()
+    b.show()
+
+def tri():
+    images = ['ajpg.jpg', 'cat.jpg', 'flower.jpg', 'l.jpg', 'r.jpg']
+    for img in images:
+        image = Image.open(img)
+        rezko_img = image.filter(ImageFilter.SHARPEN)
+        rezko_img.show()
+
+tri()
